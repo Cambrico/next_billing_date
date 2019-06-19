@@ -1,0 +1,18 @@
+language: php
+
+php:
+  - 5.6
+  - 7.0
+  - 7.1
+  - 7.2
+  - 7.3
+  - hhvm
+
+install:
+  - composer self-update
+  - composer install
+
+script:
+  - ./vendor/bin/phpcs --standard=./phpcs.xml src -s
+  - ./vendor/bin/phpcs --standard=./phpcs.xml tests -s
+  - ./vendor/bin/phpunit -c ./phpunit.xml.dist --strict-coverage

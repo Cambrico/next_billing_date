@@ -1,0 +1,44 @@
+{
+  "name": "cambrico/next_billing_date",
+  "homepage": "https://github.com/cambrico/next_billing_date",
+  "type": "library",
+  "description": "A small PHP 5.6+ library to calculate recurring billing dates.",
+  "keywords": [
+    "e-commerce",
+    "recurring",
+    "date"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=5.6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "squizlabs/php_codesniffer": "3.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cambrico\\NextBillingDate\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Cambrico\\NextBillingDate\\Tests\\": "tests"
+    }
+  },
+  "authors": [
+    {
+      "name": "Pedro Cambra (@pcambra)",
+      "homepage": "https://twitter.com/pcambra"
+    },
+    {
+      "name": "Manuel Egío (@facine)",
+      "homepage": "https://twitter.com/facine"
+    }
+  ],
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  }
+}
